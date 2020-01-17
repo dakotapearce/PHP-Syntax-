@@ -88,3 +88,10 @@ Examples
 
 An integer can be any number between -2,147,483,648 and 2,147,483,648 without decimals.
 
+Examples
+
+    $var = 3;
+    var_dump($var)
+
+### PHP Float
+
