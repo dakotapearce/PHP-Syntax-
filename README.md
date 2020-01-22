@@ -91,7 +91,29 @@ An integer can be any number between -2,147,483,648 and 2,147,483,648 without de
 Examples
 
     $var = 3;
-    var_dump($var)
+    var_dump($var);
+    
+    //  output int(3)
 
-### PHP Float
+### PHP Float ###
+
+A float is a integer or number with a decimal point.
+
+Examples
+
+    $var = 30.685;  
+    var_dump($var);
+    
+    //  output float(340.6854)
+    
+### PHP Boolean ###
+
+A boolean value is either TRUE or False 
+
+Examples 
+
+    $x = true;
+    $y = false;
+    
+### PHP Array ###
 
