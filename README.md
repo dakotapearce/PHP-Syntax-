@@ -49,14 +49,14 @@ Syntax print
     print "same syntax as echo";
     print $variable-also-the-same;
 
-Examples echo
+#### Example echo ####
 
     $txt1 = 'Hello World!";
     
     echo $txt1;
     echo "What is your name?";
     
-Examples print
+#### Example print ####
 
     $txt2 = "Hello";
     
@@ -79,7 +79,7 @@ There are certain data types that php will store in variables. These data types 
 
 A string is a sentence or group of characters. You can use double or single quotes to write a string.
 
-Examples 
+#### Example ####
 
     $var1 = 'Some text';
     $var2 = "Hello World";
@@ -88,7 +88,7 @@ Examples
 
 An integer can be any number between -2,147,483,648 and 2,147,483,648 without decimals.
 
-Examples
+#### Example ####
 
     $var = 3;
     var_dump($var);
@@ -99,7 +99,7 @@ Examples
 
 A float is a integer or number with a decimal point.
 
-Examples
+#### Example ####
 
     $var = 30.685;  
     var_dump($var);
@@ -110,7 +110,7 @@ Examples
 
 A boolean value is either TRUE or False 
 
-Examples 
+#### Example ####
 
     $x = true;
     $y = false;
@@ -119,7 +119,7 @@ Examples
 
 An array can store infinite ammout of strings or variables. 
 
-Exmples
+#### Example ####
 
     $cars = array("Volvo","BMW","Toyota");
     var_dump($cars);
@@ -130,7 +130,7 @@ Exmples
 
 An object stores data on how to proccess parameters inputed to that object.
 
-Example
+#### Example ####
 
     //  the constructor for the car object
     class car {
@@ -149,7 +149,7 @@ Example
 
 Null represents a variable with no value which whould be automatically asssigned when the variable is empty.
 
-Examples
+#### Example ####
 
     $x = null;
     var_dump($x);
@@ -165,7 +165,7 @@ A string is group of characters in a sentance. A string is writen with quotes ei
 
 To calculation the lenght of the string in number of characters you use the srtlen() function.
 
-Examples
+#### Example ####
 
     echo strlen("Hello World!");   
     
@@ -176,7 +176,7 @@ Examples
 
 To get the word count in a string we use str_word_count().
 
-Examples 
+#### Example ####
 
     echo str_word_count("Hello World!"); // outputs 2
     
@@ -186,7 +186,7 @@ To replace certain parts of a string with another you can use str_replace() to s
 
 Syntax  str_replace( search-value(string), replacement(string), the-search-string(string) )
 
-Examples 
+#### Example ####
 
     echo str_replace("world", "bob", "Hello world!"); // outputs Hello bob!
     
@@ -194,7 +194,7 @@ Examples
 
 To reverse a string completely you can use the strrev() function.
 
-Example
+#### Example ####
 
     echo strrev("Hello world!"); //outputs !dlrow olleH
     
@@ -204,7 +204,7 @@ Example
 
 Infinity is a value given for a number that has exceeded the float max_size.
 
-Examples 
+#### Examples ####
 
     $x =1.9e411;
     var_dump($x); //outputs float(INF)
@@ -213,4 +213,16 @@ Examples
 
 NAN is the value that is given when a mathematical operation cannot be completed. 
 
+    $x = acos(8);
+    var_dump($x); //outputs float(NAN)
     
+## PHP Constants ## 
+
+Constants are like a php variable that does not change, this means the variables cannot be redefined or incremented in any way.
+
+A best practice when writing constants is to leave them in all caps just to define them better.
+
+There are required parameters name and value but case insensitive is not required and the default is false.
+
+Syntax  define(name, value, case-insensitive)
+
