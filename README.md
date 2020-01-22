@@ -117,3 +117,100 @@ Examples
     
 ### PHP Array ###
 
+An array can store infinite ammout of strings or variables. 
+
+Exmples
+
+    $cars = array("Volvo","BMW","Toyota");
+    var_dump($cars);
+    
+    //ouput array(3) {[0]=> string(5) "Volvo" [1]=> string(3) "BMW" [2]=>string(6) "Toyota"}
+    
+### PHP Object ###
+
+An object stores data on how to proccess parameters inputed to that object.
+
+Example
+
+    //  the constructor for the car object
+    class car {
+        function car() {
+            $this->model = "VW";
+        }
+    }
+    
+    //  creating a object in the variable herbie
+    $herbie = new car();
+    
+    //   show an object properties
+    echo $herbie->model
+    
+### PHP Null ###
+
+Null represents a variable with no value which whould be automatically asssigned when the variable is empty.
+
+Examples
+
+    $x = null;
+    var_dump($x);
+    
+
+## PHP Strings
+
+A string is group of characters in a sentance. A string is writen with quotes either single or double.
+
+### Manipulating PHP Strings ###
+    
+### Calculating the length of a string ###
+
+To calculation the lenght of the string in number of characters you use the srtlen() function.
+
+Examples
+
+    echo strlen("Hello World!");   
+    
+    $x = "Hello World!";
+    echo strlen($x);    // both outputs 
+    
+### Counting the words in a string ###
+
+To get the word count in a string we use str_word_count().
+
+Examples 
+
+    echo str_word_count("Hello World!"); // outputs 2
+    
+### Replacing text in a string ###
+
+To replace certain parts of a string with another you can use str_replace() to search the string for a value then replace that value. 
+
+Syntax  str_replace( search-value(string), replacement(string), the-search-string(string) )
+
+Examples 
+
+    echo str_replace("world", "bob", "Hello world!"); // outputs Hello bob!
+    
+### Reversing a string ###
+
+To reverse a string completely you can use the strrev() function.
+
+Example
+
+    echo strrev("Hello world!"); //outputs !dlrow olleH
+    
+## PHP Numbers ##
+
+### Infinity ###
+
+Infinity is a value given for a number that has exceeded the float max_size.
+
+Examples 
+
+    $x =1.9e411;
+    var_dump($x); //outputs float(INF)
+    
+### NAN ###
+
+NAN is the value that is given when a mathematical operation cannot be completed. 
+
+    
