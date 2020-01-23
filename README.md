@@ -226,3 +226,94 @@ There are required parameters name and value but case insensitive is not require
 
 Syntax  define(name, value, case-insensitive)
 
+## PHP Operators ##
+
+### Arithmitic Operators ###
+
+Arithmitic operators are used to perform basic math operations.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+|    \+     | Addition    | $x + $y, sum of $x and $y |
+|    \-     | Subtraction | $x - $y, difference of $x and $y |
+|    \*     | Multiplication | $x * $y, product of $x and $y |
+|    \/     | Division    | $x / $y, quotient of $x and $y |
+|    \%     | Modules     | $x % $y, remainder of $x divided by $y |
+
+### Assignment Operators ###
+
+Assignment operators are different ways to assign variables.
+
+| Operator | Description | Example | 
+|----------|-------------|---------|
+|   \=      | Assign      | $x \= $y, $x \= $y |
+|   \+=     | Add and Assign | $x \+= $y, $x \= $x \+ $y |
+|   \-=     | Subtract and Assign | $x \-= $y, $x \= $x \- $y |
+|   \*=     | Multiply and assign |$x \*= $y, $x \= $x \* $y |
+|   \/=     | Divide and assign quotient |	$x \/= $y, $x \= $x \/ $y |
+|   \%=	    | Divide and assign modulus | $x \%= $y, $x \= $x \% $y |
+ 
+ ### Comparison Operators ###
+ 
+ Comparison operators compare to values and return a boolean statement either true or false.
+ 
+| Operator | Description | Example |
+|----------|-------------|---------|
+|==	|Equal|	$x == $y, True if $x is equal to $y |
+|===|Identical|	$x === $y, True if $x is equal to $y, and they are of the same type |
+|!=	|Not equal|	$x != $y, True if $x is not equal to $y |
+|<>	|Not equal|	$x <> $y, True if $x is not equal to $y |
+|!==|Not identical|	$x !== $y, True if $x is not equal to $y, or they are not of the same type |
+|<|	Less than|$x < $y, True if $x is less than $y |
+|>|	Greater than|$x > $y, True if $x is greater than $y |
+|>= | Greater than or equal to | $x >= $y, True if $x is greater than or equal to $y |
+|<=	| Less than or equal to |	$x <= $y, True if $x is less than or equal to $y |
+
+### Incrementing and Decrementing Operators ###
+
+Incrementing/Decrementing operators are to increase or decrease the value of a number data type.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+|++$x|	Pre-increment|	Increments $x by one, then returns $x|
+|$x++|	Post-increment|	Returns $x, then increments $x by one|
+|--$x|	Pre-decrement|	Decrements $x by one, then returns $x|
+|$x--|	Post-decrement|	Returns $x, then decrements $x by one|
+
+### Logical Operators ###
+
+Logical operators are used to compare two or more boolean statements.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+|and|	And|	$x and $y, True if both $x and $y are true |
+|or|	Or	|$x or $y, True if either $x or $y is true |
+|xor|	Xor	|$x xor $y, True if either $x or $y is true, but not both |
+|\&\&|	And	|$x \&\& $y, True if both $x and $y are true |
+|\|\||	Or	|$x \|\| $y, True if either $$x or $y is true |
+|\! |	Not	|\!$x, True if $x is not true |
+
+### String Operators ###
+
+There are only two string operators and they both have specific use cases.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+|.|	   Concatenation|$str1 . $str2, Concatenation of $str1 and $str2 |
+|.=|	Concatenation assignment|$str1 .= $str2, Appends the $str2 to the $str1 |
+
+### Array Operators ### 
+
+Array operators are very similar to boolean operators but instead compare arrays.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+|+|	Union|$x + $y, Union of $x and $y |
+|==|Equality|$x == $y, True if $x and $y have the same key/value pairs |
+|===|Identity|$x === $y, True if $x and $y have the same key/value pairs in the same order and of the same types |
+|!=|Inequality|$x != $y, True if $x is not equal to $y |
+|<>|Inequality|$x <> $y, True if $x is not equal to $y |
+|!==|Non-identity|$x !== $y, True if $x is not identical to $y |
+
+
+
