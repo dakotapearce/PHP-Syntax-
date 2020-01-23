@@ -315,5 +315,77 @@ Array operators are very similar to boolean operators but instead compare arrays
 |<>|Inequality|$x <> $y, True if $x is not equal to $y |
 |!==|Non-identity|$x !== $y, True if $x is not identical to $y |
 
+## PHP if and else ##
 
+### if Statements ###
+
+An if statement is used to make a check or codition to then run some code if the check was true.
+
+#### Syntax ####
+
+```
+if(condition){
+    // code to be executed
+}
+```
+
+#### Examples ####
+
+    $x = 5;
+    
+    if ($x > 0) {
+        $x = $x -1;
+        echo "TRUE!";
+    }
+    
+    
+    
+### if...else Statements ###
+
+Instead of haveing just code to be executed on true were adding some code for else false.
+
+#### Syntax ####
+
+```
+if(condition){
+    // code to be executed if true
+} else {
+    // code to be executed else
+}
+```
+
+#### Examples ####
+
+    $x = 5;
+    
+    if($x > 10) {
+        echo "true";
+    } else{
+        echo "false";
+    }
+
+###  if..elseif..else Statements ###
+
+You can stack for than one if else statement on top each other with elseif over and over again.
+
+#### Syntax ####
+```
+if(condition){
+    // code to be executed
+} elseif(condition) {
+    // code to be executed
+} else {
+    code to be executed
+}
+```
+
+#### Examples ####
+
+    if(false){
+        echo "number one";
+    } elseif(true) {
+        echo "number two";
+    } else {
+        echo "nothing";
+    }
 
