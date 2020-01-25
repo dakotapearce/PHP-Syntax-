@@ -389,3 +389,204 @@ if(condition){
         echo "nothing";
     }
 
+## PHP Functions ##
+
+When you have to perform the same task multiple places in your code, you can reuse your code with functions. Functions also make your code easy to read and simple to make changes.
+
+#### Syntax ####
+```
+function functionName (possible_input) {
+    // code for proccesssing 
+    // output
+}
+```
+#### Example ####
+```
+function printWebsiteName() {
+echo "YOUR WEBSITE NAME";
+}
+```
+
+## PHP Array ##
+
+PHP Array is a special kind of variable which can hold more than one value. It has lots of benefits like you can loop through its values or run various array related functions. There are 3 types of arrays i.e. Indexed Array, Associative Array, Multidimensional Array.
+
+We can use array() function to create an empty array. 
+
+```
+$my_arr = array();
+This created a simple empty array in PHP.
+```
+
+### Indexed Array ###
+PHP Indexed array has numeric index assigned to each of their value. PHP Indexed array can be created by 2 methods.
+
+#### Examples ####
+```
+// method 1
+$my_arr_1 = array('Mango', 'Orange', 'Grapes');
+
+// method 2
+$my_arr_2[0] = 'Mango';
+$my_arr_2[1] = 'Orange';
+$my_arr_2[2] = 'Grapes';
+```
+
+Method 1: The index is assigned automatically to each value in the array starting from 0.
+Method 2: The indexes are assigned manually one by one. Note that, there is no need to declare the array first. $my_arr_2 will be automatically converted to array when multiple values are stored in it like this.
+
+### Associative Array ###
+PHP Associative array have named index/key assigned to each of their value. These are assigned manually by you.
+
+#### Examples ####
+```
+// storing Grades of various subjects
+$grades = array('Maths' => 'B+', 'Science' => 'A', 'English' => 'A+');
+// printing grade of 'Maths' subject
+echo $grades['Maths'];
+
+// Output: B+
+```
+
+In the example of PHP Associative array, we have stored the grades as values and the subject names are keys. Then, we printed the Grade of subject ‘Maths’.
+
+### Multidimensional Array ###
+PHP Multidimensional array is the one which contains one or more arrays inside it. The arrays can be two, three, four or more levels deep. However, the deeper you go, the difficult it will be to manage.
+
+Here, let’s take an example of contacts array. In a contact, we have ‘name’, ’email’, ‘address’. Address variable further have ‘city’, ‘state’, ‘country’. So, this is a 3-dimensional array.
+
+#### Examples ####
+```
+// 3-dimensional php array of contacts
+$contacts = array(
+  array(
+    'name' => 'Varun',
+    'email' => 'varun@domain.com',
+    'address' => array(
+      'city' => 'Noida',
+      'state' => 'Uttar Pradesh',
+      'country' => 'India'
+    )
+  ),
+  array(
+    'name' => 'John',
+    'email' => 'john@domain.com',
+    'address' => array(
+      'city' => 'Los Angeles',
+      'state' => 'California',
+      'country' => 'United States'
+    )
+  )
+);
+
+// Looping through the array and printing php array of contacts.
+// Step 1 - count the number of elements in 1st dimension
+$count = count( $contacts );
+// Step 2 - for loop to get each item contact one by one
+for( $i = 0 ; $i < $count; $i++ ){
+  echo 'Name: '. $contacts[$i]['name'] .'<br />';
+  echo 'Email: '. $contacts[$i]['email'] .'<br />';
+  echo 'Address: '. $contacts[$i]['address']['city'] .', '. $contacts[$i]['address']['state'] .', '. $contacts[$i]['address']['country'] .'<br /><br />';
+}
+```
+
+## PHP Loops ##
+When you need to repeat a task multiple times, you can use a loop instead of adding the same code over and over again.
+
+NOTE: Using a break within the loop can stop the loop execution.
+
+### For loop ###
+Loop through a block of code a specific number of times.
+
+#### Examples ####
+```
+<?php
+for($index = 0; $index < 5; $index ++)
+{
+    echo "Current loop counter ".$index.".\n";
+}
+?>
+
+/*
+Output:
+
+Current loop counter 0.
+Current loop counter 1.
+Current loop counter 2.
+Current loop counter 3.
+Current loop counter 4.
+*/
+```
+### While loop ###
+Loop through a block of code if a condition is true.
+
+#### Examples ####
+```
+<?php
+$index = 10;
+while ($index >= 0)
+{
+    echo "The index is ".$index.".\n";
+    $index--;
+}
+?>
+
+/*
+Output:
+
+The index is 10.
+The index is 9.
+The index is 8.
+The index is 7.
+The index is 6.
+The index is 5.
+The index is 4.
+The index is 3.
+The index is 2.
+The index is 1.
+The index is 0.
+*/
+```
+
+### Do...While loop ###
+Loop through a block of code once and continue to loop if the condition is true.
+
+#### Examples ####
+```
+<?php
+$index = 3;
+do
+{
+    // execute this at least 1 time
+    echo "Index: ".$index.".\n"; 
+    $index --;
+}
+while ($index > 0);
+?>
+
+/*
+Output:
+
+Index: 3.
+Index: 2.
+Index: 1.
+*/
+```
+
+### Foreach loop ###
+Loop through a block of code for each value within an array.
+
+#### Examples ####
+```
+$fruits = array('apple','orange','kiwi')
+
+foreach($fruits as $fruit){
+    echo $fruit;
+}
+
+// expected output 
+
+// apple
+// orange
+// kiwi
+```
